@@ -1,0 +1,198 @@
+/* --------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #bbb;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    text-decoration: none;
+}
+figure {
+	margin: 0;
+    padding: 0;
+}
+/* --------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* --------------------------------------- */
+/* HEADER */
+/* --------------------------------------- */
+#logo {
+	width: 60%;
+	margin: 1rem 0;
+}
+#header-job-vacancy {
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)), url('img/skyscraper.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#company-description {
+	color: #349CB7;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+#contacts-nav {
+    text-align: right;
+    margin-top: 1rem;
+}
+#contacts-nav li {
+    padding-bottom: .5rem; 
+}
+#contacts-nav li a {
+    display: inline-block; 
+}
+#contacts-nav li:first-of-type {
+	font-size: 130%;
+}
+#contacts-nav li:first-of-type,
+#contacts-nav li>a {
+    color: #349CB7;
+}
+#contacts-nav li:not(:first-of-type) {
+    font-size: 80%;
+}
+#contacts-nav li>a {
+    text-decoration: none;
+    border-bottom: 1px dotted #349CB7;
+}
+/* --------------------------------------- */
+/* SITE NAVIGATION */
+/* --------------------------------------- */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.main-nav  a {
+    display: block;
+    color: #bbb;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); 
+    font-size: 140%;
+    text-decoration: none;
+    transition: all .2s;
+}
+.main-nav  a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+/* --------------------------------------- */
+/* SECTION MAIN */
+/* --------------------------------------- */
+.section-main {
+	padding: 5rem 0;
+	background-color: #eee;
+}
+/* --------------------------------------- */
+/*----- HEADINGS -----*/
+/* --------------------------------------- */
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+h1 {
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 120%;
+    color: #333;
+    margin-bottom: 15px;
+}
+p {
+	padding: 2rem;
+	text-align: justify;
+	font-weight: normal;
+	font-size: 90%;
+	word-spacing: 1px;
+    letter-spacing: .5px;
+	color: #333;
+}
+#big-header{
+	font-size: 160%;
+	margin-bottom: 2rem;
+}
+.description {
+	margin-left: 1rem;
+} 
+.description li a,
+#jobs li a {
+	color: #555;
+	padding-bottom: .8rem;
+	transition: all .2s;
+}
+.description li a:hover,
+.section-main h3 > a:hover,
+#jobs li a:hover,
+.footer-menu-ul li a:hover
+ {
+	color: #349CB7;
+}
+#jobs li a {
+	color: #333;
+}
+.description li:last-of-type {
+	margin-bottom: 15px;
+}
+
+.section-main a {
+	text-decoration: none;
+	display: block;
+}
+.section-main h3 > a {
+	color: #333;
+	transition: all .2s;
+}
+/* --------------------------------------- */
+/*----- FOOTER -----*/
+/* --------------------------------------- */
+#footer {
+	padding: 5rem 0;
+	background: #555;
+	color: #111;
+}
+address span {
+	color: #222;
+}
+a[href^="tel:"] {
+	color: #349CB7;
+}
+.footer-menu-ul li a {
+	color: #999;
+	padding-bottom: .8rem;
+	transition: all .2s;
+}
+#subscribe {
+	color: #999;
+}
